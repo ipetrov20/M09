@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #text-container {
+        margin-top: 10vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        grid-row: 1;
+        grid-column: 1 / 3;
+    }
+
+    #text-container>div {
+        float: left;
+    }
+
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: auto;
+        grid-template-rows: repeat(1fr, 1fr);
+        padding: 10px;
+    }
+
+    .grid-container>.grid-item {
+        grid-column: 1;
+    }
+
+    .grid-container>.grid-item-img {
+        grid-column: 2;
+    }
+
+    .grid-container>.grid-item {
+        grid-column: 2;
+        text-align: justify;
+    }
+
+    .grid-container>.grid-item-img {
+        grid-column: 2;
+    }
+
+    .grid-item-img {
+        grid-column: 1;
+    }
+
+    .grid-container>.grid-item {
+        grid-column: 2;
+        text-align: justify;
+    }
+
+    .grid-item-img {
+        grid-column: 1;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 0.5px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .grid-container>.grid-item {
+        grid-column: 1;
+    }
+
+    .grid-container>.grid-item-img {
+        grid-column: 2;
+    }
+
+    .grid-item-img{
+    grid-column: 1;
+  }
+
+  section{
+    width: 60%;
+  }
+</style>
+
+<body>
+    <section>
+        <header id="text-container">
+            <div>Sobre nosaltres</div>
+        </header>
+        <div class="grid-container">
+            <div class="grid-item-img"><img src="pictures/nosaltres1.jpg" alt="nosaltres" id="img-noslatres"></div>
+            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque obcaecati itaque
+                dolor. Eos, in? Reiciendis nesciunt beatae velit optio tenetur mollitia laborum! Rerum quod nam
+                asperiores error, quos praesentium quibusdam sit nesciunt quidem aut natus veritatis magni, suscipit,
+                neque placeat esse voluptatibus cumque ad explicabo. Molestias ipsa harum nostrum.</div>
+            <div class="grid-item-img"><img src="pictures/nosaltres2.jpg" alt="nosaltres2" id="img-nosaltres2"></div>
+            <div class="grid-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dolore saepe
+                architecto excepturi officia, modi perspiciatis possimus et animi sunt magni qui, quo inventore deleniti
+                hic natus, minus officiis repellendus accusamus eligendi fugiat sint facilis voluptate ullam. Dolores,
+                ad cum soluta illum ipsum, dignissimos repellat officiis dolor, praesentium temporibus in!</div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/*  ---------------------------- BARRA SUPERIOR  --------------------------- */
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0% 2% 1.5% 2%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.titol {
+    height: 5vh;
+    margin: 2vh;
+}
+
+.subtitol {
+    padding: 5px 0px 5px 0px;
+}
+
+.titol,
+.subtitol {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid black;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    border: 1px solid black;
+
+}
+
+/* ------------------ MENÚ DE LA DRETA----------------------------*/
+
+aside {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(50, 199, 20);
+}
+
+aside>ul {
+    width: 75%;
+}
+
+aside>ul>li {
+    margin-top: 3vh;
+    padding: 0vh .5vh 0vh 0vh;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* -------------------CONTENIDOR DEL CENTRE --------------------------*/
+
+article {
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgb(211, 24, 24);
+}
+
+.containerArticle {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerArticle>div {
+    width: 100%;
+    height: auto;
+    border: .5px solid black;
+    padding: 1vh;
+    margin-bottom: 1.5vh; 
+
+}
+
+.titleArticle {
+    font-size: 2.3vh;
+    border: .5px solid black;
+}
+
+.article {
+    border: .5px;
+    margin-top: 1.5vh;
+    border: 1px solid black;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    height: 38%;
+
+
+}
+
+.info>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info>ul>li>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.info>ul,
+.info>ul>li>ul
+{  
+    padding: 3%;
+}
+
+.info>ul{
+    border: 1px solid black;
+}
+
+.info>ul>li
+{  
+    width: 32%; 
+    border: 1px solid rgb(0, 255, 251);
+    
+}
+
+info>ul>li>ul>li {
+
+    border: 1px solid black; 
+    margin-top: 20px;
+}
+
+.info>ul>li>ul>li{
+    border: 1px solid green;
+}
+
+li>img {
+    width: 7vh;
+}
+
+#thumbPhoto{
+    max-width: 100%; 
+    margin-top: auto;
+}
+
+/* ----------------------- PEU DE PÀGINA ------------------------*/
+
+footer {
+    width: 100%;
+    height: 6%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 86, 114);
+}
+
+.footerText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    border: 1px solid black;
+}
