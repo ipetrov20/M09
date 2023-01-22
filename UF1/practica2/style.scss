@@ -1,3 +1,4 @@
+// Truquem als altres fitxers que contenten les variables i mixin amb un @import, aquí no les guardem peer respectar la modularitat
 @import "colors";
 @import "extent";
 @import "align";
@@ -9,15 +10,19 @@
 }
 
 html {
+    //En  aquest exemple truquem les variables dels fitxes d'abans, en quest cas _extent.scss
     width: $w-100;
     height: $h-100;
 }
 
 body {
+    // Incluïm el mixin que es troba a la clase _align
     @include align-flex-c-cl;
+    // Fem un extend de la clase html que es troba adalt, així reutilitzem codi se haber de repetir-ne
     @extend html;
 }
 
+// En aquest cas y en molts altres que trobarem més abaix, s'utilitzarà els aniuaments per seleccionar elements dins d'altres elements
 nav {
     width: $w-100;
     height: 8vh;
@@ -316,6 +321,7 @@ section {
     height: 30vh;
 }
 
+//Fem media queries de la mateixa manera que en css, malgrat es pugui fer d'una altra manera però com estic començant no ho faré
 @media screen and (max-width: 768px) {
     nav {
         background-color: white;

@@ -1,8 +1,10 @@
+//Variables
 $w-100: 100%;
 $h-100: 100%;
 $w-a: auto;
 $h-a: auto;
 
+// Mixins, diguemm que això es com una mena de variable que conté més d'un valor y aquests amb les seves propietats, com el width
 @mixin w-h-100 {
     width: 100%;
     height: 100%;
