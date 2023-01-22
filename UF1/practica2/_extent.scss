@@ -1,0 +1,14 @@
+$w-100: 100%;
+$h-100: 100%;
+$w-a: auto;
+$h-a: auto;
+
+@mixin w-h-100 {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin w-h-auto {
+    width: auto;
+    height: auto;
+}
